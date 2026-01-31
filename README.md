@@ -27,6 +27,11 @@ Para ejecutar las pruebas, utilice el siguiente comando:
 ```bash
 npm test
 ```
+Si deseas ejecutar la prueba abriendo el navegador usa 
+
+```bash
+npm run test:headed
+```
 
 Este comando ejecuta `cucumber-js`, el cual corre los archivos de características (features) encontrados en el directorio `features` utilizando las definiciones de pasos en `src/steps`.
 
@@ -53,8 +58,9 @@ El proyecto sigue el patrón de diseño **Page Object Model (POM)** para asegura
 3.  **Hooks**: Utilizamos hooks `Before` y `After` para gestionar el ciclo de vida del contexto del navegador, asegurando que cada escenario comience con un estado limpio.
 4.  **JavaScript**: Utilizamos JavaScript moderno (ES6+) por compatibilidad y facilidad de desarrollo.
 5.  **Validacion de login**: Verificamos que hayamos hecho login validando que los productos existan con await expect(this.title).toHaveText('Products');
-6.  Agregamos al carrito
+6.  Agregamos al carrito un item y verificamos que fue agregado con un count de la cantidad de productos
 7.  Utilizamos pattern matching entre el archivo .feature y archivos de codigo .js para tener un orden completo dentro de nuestros steps
+8.  Facilitamos la ejecucion headed o headless para no tener que depende de la configuracion global.
 
 
 ## Mejoras Futuras
