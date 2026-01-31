@@ -1,0 +1,4 @@
+node_modules/
+cucumber-report.html
+test-results/
+.DS_Store

@@ -1,0 +1,24 @@
+{
+  "name": "testautomationchallenge",
+  "version": "1.0.0",
+  "description": "Test automation challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisalfredorojas/testAutomationChallenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisalfredorojas/testAutomationChallenge/issues"
+  },
+  "homepage": "https://github.com/luisalfredorojas/testAutomationChallenge#readme",
+  "dependencies": {
+    "@cucumber/cucumber": "^12.6.0",
+    "@playwright/test": "^1.58.0"
+  }
+}
