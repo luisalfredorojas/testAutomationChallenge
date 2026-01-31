@@ -76,3 +76,4 @@ El proyecto sigue el patrón de diseño **Page Object Model (POM)** para asegura
 -   Agregar CI/CD. Github Actions(GHA) puede servir para empezar.
 -   De escalar a un proyecto mas grande podemos usar scenario object model(SOM)
 -   Revisar https://youtu.be/gOYjPQ3IaT4?si=L56uvvar9XYGRIBY para otra forma de implementacion del diseño POM. Tutorial hecho por mi.
+-   Implementar steps o check en github para mantener branch management seguro y limpio.
