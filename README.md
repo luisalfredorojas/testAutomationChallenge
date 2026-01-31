@@ -1,4 +1,4 @@
-# Desafío de Automatización de Pruebas | Luis Alfredo Rojas
+# Challenge Automatización de Pruebas | Luis Alfredo Rojas
 
 Este proyecto contiene una prueba automatizada para el sitio web [SauceDemo](https://www.saucedemo.com/), implementada utilizando **Playwright**, **Cucumber** y **Node.js**.
 
