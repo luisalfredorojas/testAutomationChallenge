@@ -6,7 +6,9 @@ let context;
 let page;
 
 BeforeAll(async function () {
-  browser = await chromium.launch({ headless: true }); // Leer de la configuración idealmente, pero hardcodeado por simplicidad aquí
+  // Si la variable de entorno HEADLESS es 'false', se ejecuta en modo headed (visible)
+  const headless = process.env.HEADLESS !== 'false';
+  browser = await chromium.launch({ headless: headless });
 });
 
 AfterAll(async function () {
