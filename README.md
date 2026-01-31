@@ -31,7 +31,7 @@ npm test
 Este comando ejecuta `cucumber-js`, el cual corre los archivos de características (features) encontrados en el directorio `features` utilizando las definiciones de pasos en `src/steps`.
 
 Gracias a la configuracion que agregue en cucumber.js se pueden generar reportes.
-Para ver el resultado ddetallado en formato de reporte, usa este comando. `open cucumber-report.html`. 
+Para ver el resultado ddetallado en formato de reporte, usa este comando. `open cucumber-report.html` para mac. `start cucumber-report.html para windows`.
 
 <img width="1082" height="792" alt="image" src="https://github.com/user-attachments/assets/29930213-8761-4f22-bc40-91e40ccd2dbf" />
 
@@ -53,6 +53,8 @@ El proyecto sigue el patrón de diseño **Page Object Model (POM)** para asegura
 3.  **Hooks**: Utilizamos hooks `Before` y `After` para gestionar el ciclo de vida del contexto del navegador, asegurando que cada escenario comience con un estado limpio.
 4.  **JavaScript**: Utilizamos JavaScript moderno (ES6+) por compatibilidad y facilidad de desarrollo.
 5.  **Validacion de login**: Verificamos que hayamos hecho login validando que los productos existan con await expect(this.title).toHaveText('Products');
+6.  Agregamos al carrito
+7.  Utilizamos pattern matching entre el archivo .feature y archivos de codigo .js para tener un orden completo dentro de nuestros steps
 
 
 ## Mejoras Futuras
@@ -63,5 +65,8 @@ El proyecto sigue el patrón de diseño **Page Object Model (POM)** para asegura
 -   Implementar soporte para ejecución en paralelo en la configuración de Cucumber.
 -   Agregar más escenarios para cubrir casos borde (ej. eliminar ítems, login inválido).
 -   Externalizar la configuración (URLs, credenciales) a variables de entorno.
+-   Bajo el patron de diseño del codigo podemos implementar otras pruebas como verificar que mensajes de error aparezcan correctamente, verificar que los filtros funcionen o verificar que se despliegue el GNAV correctamente
+-   Implementar un test para verificar links con 404 usando el context api nativo de playwirght.
 -   Agregar CI/CD. Github Actions(GHA) puede servir para empezar.
+-   De escalar a un proyecto mas grande podemos usar scenario object model(SOM)
 -   Revisar https://youtu.be/gOYjPQ3IaT4?si=L56uvvar9XYGRIBY para otra forma de implementacion del diseño POM. Tutorial hecho por mi.
