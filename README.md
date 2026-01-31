@@ -28,6 +28,10 @@ npm test
 ```
 
 Este comando ejecuta `cucumber-js`, el cual corre los archivos de características (features) encontrados en el directorio `features` utilizando las definiciones de pasos en `src/steps`.
+Para ver el resultado ddetallado de las pruebas ejecuta `open cucumber-report.html`. 
+
+<img width="1082" height="792" alt="image" src="https://github.com/user-attachments/assets/29930213-8761-4f22-bc40-91e40ccd2dbf" />
+
 
 ## Estructura del Proyecto
 
