@@ -48,10 +48,10 @@ El proyecto sigue el patrón de diseño **Page Object Model (POM)** para asegura
 
 ## Decisiones Técnicas
 
-1.  **Playwright + Cucumber**: Elegido para combinar la velocidad y confiabilidad de Playwright con la legibilidad y capacidades BDD de Cucumber.
-2.  **Page Object Model (POM)**: Implementado para separar la lógica de prueba (pasos) de los detalles de la página (selectores CSS, acciones). Esto hace que el código sea más fácil de mantener; si un selector cambia, solo necesita actualizarse en un lugar.
-3.  **Hooks**: Se utilizaron hooks `Before` y `After` para gestionar el ciclo de vida del contexto del navegador, asegurando que cada escenario comience con un estado limpio.
-4.  **JavaScript**: Se utilizó JavaScript moderno (ES6+) por compatibilidad y facilidad de desarrollo.
+1.  **Playwright + Cucumber**: Para combinar la velocidad y confiabilidad de Playwright con la legibilidad y capacidades BDD de Cucumber.
+2.  **Page Object Model (POM)**: Para separar la lógica de prueba (pasos) de los detalles de la página (selectores CSS, acciones). Esto hace que el código sea más fácil de mantener; si un selector cambia, solo necesita actualizarse en un lugar.
+3.  **Hooks**: Utilizamos hooks `Before` y `After` para gestionar el ciclo de vida del contexto del navegador, asegurando que cada escenario comience con un estado limpio.
+4.  **JavaScript**: Utilizamos JavaScript moderno (ES6+) por compatibilidad y facilidad de desarrollo.
 5.  **Validacion de login**: Verificamos que hayamos hecho login validando que los productos existan con await expect(this.title).toHaveText('Products');
 
 
