@@ -1,3 +1,4 @@
+// Configuración común para Cucumber
 module.exports = {
   default: {
     paths: ['features/**/*.feature'],

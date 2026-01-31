@@ -1,4 +1,5 @@
 name: Playwright Tests
+# Configuración del pipeline de CI
 
 on:
   push:

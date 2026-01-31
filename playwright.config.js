@@ -1,6 +1,7 @@
 // @ts-check
 const { defineConfig, devices } = require('@playwright/test');
 
+// Configuración principal para Playwright
 module.exports = defineConfig({
   testDir: './tests', // No se usa para Cucumber, pero es bueno tenerlo
   timeout: 30 * 1000,
